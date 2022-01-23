@@ -16,7 +16,7 @@ The nodes have the resources and the clients can query them and reserve them for
 | `-gateway` | Format: "ip:port" - IP and Port from node |
 | `-ident` | Identifier for client (numeric) |
 | `terminate` | Terminates the client after connecting to the server |
-| `Ressourcename:Ressourcevalue(numeric)` | - The value that the client need |
+| `Ressourcename:Ressourcevalue(numeric)` | The value that the client need |
 
 ## Arguments for server
 
