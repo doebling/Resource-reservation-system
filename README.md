@@ -4,25 +4,32 @@
 
 | Command | Description |
 | --- | --- |
-| NetworkClient | Start the network client to connect to the server |
-| NetworkNode | Start the server/node |
+| `NetworkClient` | Start the network client to connect to the server |
+| `NetworkNode` | Start the server/node |
 
 ## Arguments for client
 
 | Argument | Description |
 | --- | --- |
-| -gateway | Format: "ip:port" - IP and Port from node |
-| -ident | Identifier for client (numeric) |
-| terminate | Terminates the client after connecting to the server |
-| Ressourcename:Ressourcevalue(numeric) | - The value that the client need |
+| `-gateway` | Format: "ip:port" - IP and Port from node |
+| `-ident` | Identifier for client (numeric) |
+| `terminate` | Terminates the client after connecting to the server |
+| `Ressourcename:Ressourcevalue(numeric)` | - The value that the client need |
 
 ## Arguments for server
 
 | Argument | Description |
 | --- | --- |
-| -tcpport | Set the tcp port of the server |
-| -ident | Identifier for server (numeric) |
-| Ressourcename:Ressourcevalue(numeric) | - The ressources of the server |
+| `-tcpport` | Set the tcp port of the server |
+| `-ident` | Identifier for server (numeric) |
+| `A:1` | - The ressources of the server | A=Name 1=Ressourcecount |
+
+## Example Commands
+
+| Example commands |
+| --- | 
+| java Main NetworkClient -ident 1 -gateway localhost:9000 A:1 |
+| java Main NetworkNode -ident 1 -tcpport 9000 A:1 |
 
 ## Responses from server
 
