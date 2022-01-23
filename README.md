@@ -1,5 +1,7 @@
 # Resource-reservation-system
 
+The nodes have the resources and the clients can query them and reserve them for themselves.
+
 ## Commands
 
 | Command | Description |
